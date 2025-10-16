@@ -1,3 +1,5 @@
+package intermediate;
+
 /**
  * File I/O Demo
  * 

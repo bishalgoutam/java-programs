@@ -1,3 +1,5 @@
+package intermediate.collections;
+
 /**
  * Collections Framework - Comprehensive Examples
  * 

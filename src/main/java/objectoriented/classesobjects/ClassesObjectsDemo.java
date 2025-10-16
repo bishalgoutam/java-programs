@@ -1,3 +1,5 @@
+package objectoriented.classesobjects;
+
 /**
  * Classes and Objects - Comprehensive Examples
  * 
@@ -100,6 +102,12 @@ public class ClassesObjectsDemo {
         Student s3 = new Student("Charlie", 19, 88.0);
         
         System.out.println("After creating 3 students: " + Student.getStudentCount());
+        
+        // Display student information
+        System.out.println("Student details:");
+        System.out.println("  " + s1.getName() + " - Grade: " + s1.getGrade());
+        System.out.println("  " + s2.getName() + " - Grade: " + s2.getGrade());
+        System.out.println("  " + s3.getName() + " - Grade: " + s3.getGrade());
         
         // Static methods can be called without objects
         System.out.println("Average passing grade: " + Student.getAveragePassingGrade());

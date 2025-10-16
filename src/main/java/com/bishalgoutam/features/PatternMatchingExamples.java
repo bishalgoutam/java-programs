@@ -2,7 +2,6 @@ package com.bishalgoutam.features;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Stream;
 
 /**
  * Java 21 Pattern Matching Examples

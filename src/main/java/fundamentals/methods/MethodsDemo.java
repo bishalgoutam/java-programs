@@ -1,3 +1,5 @@
+package fundamentals.methods;
+
 /**
  * Methods Fundamentals - Comprehensive Examples
  * 
@@ -31,6 +33,7 @@ public class MethodsDemo {
         
         // Create instance for instance method demonstrations
         MethodsDemo demo = new MethodsDemo("MethodsDemo");
+        System.out.println("Created demo instance: " + demo.name + " (call count: " + demo.count + ")\n");
         
         demo.basicMethodConcepts();
         demo.parameterPassingDemo();
@@ -45,6 +48,7 @@ public class MethodsDemo {
      * Demonstrates basic method concepts
      */
     public void basicMethodConcepts() {
+        count++; // Increment method call counter
         System.out.println("1. Basic Method Concepts");
         System.out.println("-".repeat(28));
         
@@ -125,7 +129,7 @@ public class MethodsDemo {
         
         // Array vs individual parameters
         printNumbers(new int[]{1, 2, 3, 4, 5});
-        printNumbers(1, 2, 3, 4, 5);
+        printNumbersVarargs(1, 2, 3, 4, 5);
         System.out.println();
     }
     
@@ -320,7 +324,7 @@ public class MethodsDemo {
         System.out.println();
     }
     
-    private void printNumbers(int... numbers) {
+    private void printNumbersVarargs(int... numbers) {
         System.out.print("Varargs version: ");
         for (int num : numbers) {
             System.out.print(num + " ");

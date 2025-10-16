@@ -1,3 +1,5 @@
+package fundamentals.variablesdatatypes;
+
 /**
  * Java Variables and Data Types Demo
  * 
@@ -166,6 +168,7 @@ public class VariablesDemo {
         System.out.println("\nWrapper Classes:");
         Integer integerWrapper = Integer.valueOf(100);  // Boxing
         int primitiveFromWrapper = integerWrapper.intValue();  // Unboxing
+        System.out.println("  Wrapper " + integerWrapper + " -> primitive " + primitiveFromWrapper);
         
         // Autoboxing and auto-unboxing (Java 5+)
         Integer autoBoxed = 200;  // Automatic boxing

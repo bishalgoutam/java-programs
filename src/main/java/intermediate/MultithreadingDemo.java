@@ -1,3 +1,5 @@
+package intermediate;
+
 /**
  * Multithreading Demo
  * 
@@ -94,11 +96,11 @@ class Buffer {
 }
 
 // Bank account for demonstrating synchronization
-class BankAccount {
+class SynchronizedBankAccount {
     private double balance;
     private final ReentrantLock lock = new ReentrantLock();
     
-    public BankAccount(double initialBalance) {
+    public SynchronizedBankAccount(double initialBalance) {
         this.balance = initialBalance;
     }
     
@@ -372,7 +374,7 @@ public class MultithreadingDemo {
         
         // Demonstrate bank account synchronization
         System.out.println("\nTesting bank account synchronization:");
-        BankAccount account = new BankAccount(1000.0);
+        SynchronizedBankAccount account = new SynchronizedBankAccount(1000.0);
         
         List<Thread> bankThreads = new ArrayList<>();
         

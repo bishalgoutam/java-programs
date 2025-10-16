@@ -1,3 +1,5 @@
+package intermediate;
+
 /**
  * Exception Handling Demo
  * 

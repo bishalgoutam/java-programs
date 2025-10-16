@@ -1,3 +1,5 @@
+package objectoriented.inheritance;
+
 /**
  * Inheritance - Comprehensive Examples
  * 

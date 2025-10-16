@@ -1,3 +1,5 @@
+package projects.calculator;
+
 /**
  * Scientific Calculator Project
  * 

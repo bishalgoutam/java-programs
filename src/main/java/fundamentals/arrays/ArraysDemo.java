@@ -1,3 +1,5 @@
+package fundamentals.arrays;
+
 /**
  * Arrays Fundamentals - Comprehensive Examples
  * 
@@ -247,6 +249,8 @@ public class ArraysDemo {
         
         Arrays.sort(userArray);
         System.out.println("Sorted: " + Arrays.toString(userArray));
+        
+        scanner.close();
     }
     
     // Helper methods for algorithms

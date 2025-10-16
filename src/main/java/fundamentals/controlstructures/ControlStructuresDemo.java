@@ -1,3 +1,5 @@
+package fundamentals.controlstructures;
+
 /**
  * Control Structures - Comprehensive Examples
  * 
@@ -10,8 +12,6 @@
  * @author Bishal Goutam
  * @since Java 21
  */
-import java.util.Scanner;
-import java.util.List;
 import java.util.Random;
 
 public class ControlStructuresDemo {

@@ -1,3 +1,5 @@
+package fundamentals.operators;
+
 /**
  * Java Operators Demo
  * 
@@ -178,8 +180,12 @@ public class OperatorsDemo {
         
         // Short-circuit evaluation
         System.out.println("\nShort-circuit Evaluation:");
-        System.out.println("  false && (expensive operation): " + (false && expensiveOperation()));
-        System.out.println("  true || (expensive operation): " + (true || expensiveOperation()));
+        @SuppressWarnings("unused")
+        boolean shortCircuit1 = false && expensiveOperation(); // expensiveOperation() not called
+        @SuppressWarnings("unused") 
+        boolean shortCircuit2 = true || expensiveOperation(); // expensiveOperation() not called
+        System.out.println("  false && (expensive operation): " + shortCircuit1);
+        System.out.println("  true || (expensive operation): " + shortCircuit2);
         System.out.println("Note: expensive operation methods were not called due to short-circuiting");
         
         System.out.println();
@@ -320,7 +326,9 @@ public class OperatorsDemo {
         System.out.println("  (5 + 3) * 2 = " + result2 + " (parentheses first)");
         
         // Logical precedence
+        @SuppressWarnings("unused")
         boolean result3 = true || false && false;  // && has higher precedence than ||
+        @SuppressWarnings("unused") 
         boolean result4 = (true || false) && false; // Parentheses change order
         
         System.out.println("\nLogical Precedence:");

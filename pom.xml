@@ -20,7 +20,6 @@
         <!-- Java 21 LTS Configuration -->
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
-        <maven.compiler.release>21</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         
@@ -86,9 +85,7 @@
                 <configuration>
                     <source>21</source>
                     <target>21</target>
-                    <release>21</release>
                     <compilerArgs>
-                        <arg>--enable-preview</arg>
                         <arg>-Xlint:all</arg>
                         <arg>-Xlint:-options</arg>
                         <arg>-Xlint:-path</arg>
@@ -105,7 +102,6 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.plugin.version}</version>
                 <configuration>
-                    <argLine>--enable-preview</argLine>
                     <useModulePath>false</useModulePath>
                 </configuration>
             </plugin>
@@ -116,7 +112,6 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>${maven.failsafe.plugin.version}</version>
                 <configuration>
-                    <argLine>--enable-preview</argLine>
                 </configuration>
                 <executions>
                     <execution>
