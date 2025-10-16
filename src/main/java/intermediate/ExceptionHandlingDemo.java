@@ -17,6 +17,7 @@ import java.util.*;
 
 // Custom Exception Classes
 class InsufficientFundsException extends Exception {
+    private static final long serialVersionUID = 1L;
     private double currentBalance;
     private double requestedAmount;
     
@@ -32,12 +33,14 @@ class InsufficientFundsException extends Exception {
 }
 
 class InvalidEmailException extends Exception {
+    private static final long serialVersionUID = 1L;
     public InvalidEmailException(String email) {
         super("Invalid email format: " + email);
     }
 }
 
 class DatabaseConnectionException extends RuntimeException {
+    private static final long serialVersionUID = 1L;
     public DatabaseConnectionException(String message, Throwable cause) {
         super(message, cause);
     }
@@ -512,12 +515,12 @@ public class ExceptionHandlingDemo {
     private static void demonstrateResourceManagement() {
         System.out.println("✓ Best Practice: Proper resource management");
         
-        // Good: Using try-with-resources
-        try (Scanner scanner = new Scanner(System.in)) {
-            // Resource automatically closed
-            System.out.println("Scanner will be automatically closed");
-        } catch (Exception e) {
-            System.out.println("Error with scanner: " + e.getMessage());
+        // Good: Using try-with-resources for file operations
+        try (FileWriter writer = new FileWriter("temp.txt")) {
+            writer.write("Resource management example");
+            System.out.println("File written successfully with auto-close");
+        } catch (IOException e) {
+            System.out.println("Error with file operations: " + e.getMessage());
         }
         
         System.out.println();
