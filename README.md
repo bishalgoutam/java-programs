@@ -431,7 +431,6 @@ This project is open source and available under the [MIT License](LICENSE).- Add
 *Built with Java 21 LTS • Educational Programming Repository • Happy Coding! ☕***Bishal Goutam**
 - GitHub: [@bishalgoutam](https://github.com/bishalgoutam)
 - LinkedIn: [Bishal Goutam](https://www.linkedin.com/in/bishal-goutam-9139451a/)
-- Email: [your-email@example.com]
 
 ## 📄 License
 
